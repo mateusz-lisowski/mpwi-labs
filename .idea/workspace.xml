@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="Create function for calculating number of variations without repeats">
+    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="Implement main function of the program">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711133934453</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implement main function of the program">
+      <option name="closed" value="true" />
+      <created>1711134542079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711134542079</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,6 +145,7 @@
     <MESSAGE value="Move all files to dedicated directories" />
     <MESSAGE value="Add .gitignore file" />
     <MESSAGE value="Create function for calculating number of variations without repeats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create function for calculating number of variations without repeats" />
+    <MESSAGE value="Implement main function of the program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement main function of the program" />
   </component>
 </project>
