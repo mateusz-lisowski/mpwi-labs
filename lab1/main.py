@@ -35,7 +35,16 @@ def calculate_variation_with_repeats(number_of_elements: int, number_of_chosen: 
 
 
 def main():
-    pass
+
+    max_number = int(input("Enter maximal number: "))
+    size = int(input("Enter size of the variation: "))
+
+    print("\nVariations without repeats")
+    variations_unique = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
+    for index, var in enumerate(variations_unique):
+        print(f"{index + 1}: {var}")
+
+    print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
 
 
 if __name__ == '__main__':
