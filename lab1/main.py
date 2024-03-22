@@ -1,3 +1,6 @@
+import math
+
+
 def generate_variations_with_repeats(input_list: list, length: int) -> list[list]:
 
     if length == 0:
@@ -25,6 +28,10 @@ def generate_variations_without_repeats(input_list: list, length: int) -> list[l
             variations.append([element] + sub_variation)
 
     return variations
+
+
+def calculate_variation_with_repeats(number_of_elements: int, number_of_chosen: int) -> int:
+    return int(math.factorial(number_of_elements) / math.factorial(number_of_elements - number_of_chosen))
 
 
 def main():
