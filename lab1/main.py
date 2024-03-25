@@ -1,4 +1,27 @@
+import csv
 import math
+from dataclasses import dataclass
+
+
+@dataclass
+class City:
+
+    name: str
+    population: int
+    lat: float
+    lng: float
+
+    @staticmethod
+    def calculate_route_length(cities: list['City']) -> float:
+        length = 0.0
+        for i in range(len(cities) - 1):
+            curr = cities[i]
+            nxt = cities[i + 1]
+            length += curr.calculate_distance(nxt)
+        return length
+
+    def calculate_distance(self, other: 'City') -> float:
+        return math.sqrt(math.pow(self.lat - other.lat, 2) + math.pow(self.lng - other.lng, 2))
 
 
 def generate_variations_with_repeats(input_list: list, length: int) -> list[list]:
@@ -49,6 +72,8 @@ def order_variations(variations: list[list]) -> list[list]:
 
 
 def main():
+
+    data = csv.reader()
 
     max_number = int(input("Enter maximal number: "))
     size = int(input("Enter size of the variation: "))
