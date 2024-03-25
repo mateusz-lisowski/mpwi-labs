@@ -39,6 +39,17 @@ class City:
         return math.sqrt(math.pow(self.lat - other.lat, 2) + math.pow(self.lng - other.lng, 2))
 
 
+def find_best_path(routes: list[list[City]]) -> tuple[list[City], float]:
+    min_length = float('inf')
+    min_route = None
+    for route in routes:
+        length = City.calculate_route_length(route)
+        if length < min_length:
+            min_length = length
+            min_route = route
+    return min_route, min_length
+
+
 def generate_variations_with_repeats(input_list: list, length: int) -> list[list]:
 
     if length == 0:
