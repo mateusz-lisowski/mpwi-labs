@@ -55,15 +55,16 @@ def main():
 
     print("\nVariations without repeats")
     variations_without_reps = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
-    variations_unique = order_variations(variations_without_reps)
-    for index, var in enumerate(variations_unique):
+    variations_without_reps_unique = order_variations(variations_without_reps)
+    for index, var in enumerate(variations_without_reps_unique):
         print(f"{index + 1}: {var}")
 
     print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
 
     print("\nVariations with repeats")
     variations_reps = generate_variations_with_repeats(list(range(1, max_number + 1)), size)
-    for index, var in enumerate(variations_reps):
+    variations_reps_unique = order_variations(variations_reps)
+    for index, var in enumerate(variations_reps_unique):
         print(f"{index + 1}: {var}")
 
     print(f"There should be {calculate_variations_without_repeats(max_number, size)} variations")
