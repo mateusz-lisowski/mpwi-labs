@@ -1,5 +1,4 @@
 import math
-from itertools import groupby
 
 
 def generate_variations_with_repeats(input_list: list, length: int) -> list[list]:
@@ -51,9 +50,16 @@ def main():
     size = int(input("Enter size of the variation: "))
 
     print("\nVariations without repeats")
-    variations_reps = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
-    variations_unique = order_variations(variations_reps)
+    variations_without_reps = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
+    variations_unique = order_variations(variations_without_reps)
     for index, var in enumerate(variations_unique):
+        print(f"{index + 1}: {var}")
+
+    print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
+
+    print("Variations with repeats")
+    variations_reps = generate_variations_with_repeats(list(range(1, max_number + 1)), size)
+    for index, var in enumerate(variations_reps):
         print(f"{index + 1}: {var}")
 
     print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
