@@ -20,6 +20,21 @@ class City:
             length += curr.calculate_distance(nxt)
         return length
 
+    @staticmethod
+    def load_cities(path: str, delimiter: str = ',') -> list['City']:
+        cities: list['City'] = []
+        with open(path, 'r') as file:
+            csv_reader = csv.reader(file, delimiter=delimiter)
+            for row in csv_reader:
+                name, pop_str, lat_str, lng_str = row
+                cities.append(City(
+                    name=name,
+                    population=int(pop_str),
+                    lat=float(lat_str),
+                    lng=float(lng_str)
+                ))
+        return cities
+
     def calculate_distance(self, other: 'City') -> float:
         return math.sqrt(math.pow(self.lat - other.lat, 2) + math.pow(self.lng - other.lng, 2))
 
@@ -73,7 +88,7 @@ def order_variations(variations: list[list]) -> list[list]:
 
 def main():
 
-    data = csv.reader()
+    cities = City.load_cities('data.csv')
 
     max_number = int(input("Enter maximal number: "))
     size = int(input("Enter size of the variation: "))
