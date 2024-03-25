@@ -120,6 +120,14 @@ def main():
 
     print(f"There should be {calculate_variations_without_repeats(max_number, size)} variations")
 
+    print(f"\nShortest path")
+    all_routes = generate_variations_without_repeats(cities, length=len(cities))
+    route, length = find_best_path(all_routes)
+    print(f"Shortest path is")
+    for city in route:
+        print(city)
+    print(f"Length of path is: {length}")
+
 
 if __name__ == '__main__':
     main()
