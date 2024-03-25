@@ -50,6 +50,17 @@ def find_best_path(routes: list[list[City]]) -> tuple[list[City], float]:
     return min_route, min_length
 
 
+def find_best_pops_fit(populations: list[list[City]], target: float) -> tuple[list[City], float]:
+    fittest_sum = float('inf')
+    fittest_pop = None
+    for pop in populations:
+        curr_sum = sum([city.population for city in pop])
+        if abs(curr_sum - target) < abs(fittest_sum - target):
+            fittest_sum = curr_sum
+            fittest_pop = pop
+    return fittest_pop, fittest_sum
+
+
 def generate_variations_with_repeats(input_list: list, length: int) -> list[list]:
 
     if length == 0:
@@ -101,24 +112,24 @@ def main():
 
     cities = City.load_cities('lab1/data.csv')
 
-    max_number = int(input("Enter maximal number: "))
-    size = int(input("Enter size of the variation: "))
-
-    print("\nVariations without repeats")
-    variations_without_reps = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
-    variations_without_reps_unique = order_variations(variations_without_reps)
-    for index, var in enumerate(variations_without_reps_unique):
-        print(f"{index + 1}: {var}")
-
-    print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
-
-    print("\nVariations with repeats")
-    variations_reps = generate_variations_with_repeats(list(range(1, max_number + 1)), size)
-    variations_reps_unique = order_variations(variations_reps)
-    for index, var in enumerate(variations_reps_unique):
-        print(f"{index + 1}: {var}")
-
-    print(f"There should be {calculate_variations_without_repeats(max_number, size)} variations")
+    # max_number = int(input("Enter maximal number: "))
+    # size = int(input("Enter size of the variation: "))
+    #
+    # print("\nVariations without repeats")
+    # variations_without_reps = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
+    # variations_without_reps_unique = order_variations(variations_without_reps)
+    # for index, var in enumerate(variations_without_reps_unique):
+    #     print(f"{index + 1}: {var}")
+    #
+    # print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
+    #
+    # print("\nVariations with repeats")
+    # variations_reps = generate_variations_with_repeats(list(range(1, max_number + 1)), size)
+    # variations_reps_unique = order_variations(variations_reps)
+    # for index, var in enumerate(variations_reps_unique):
+    #     print(f"{index + 1}: {var}")
+    #
+    # print(f"There should be {calculate_variations_without_repeats(max_number, size)} variations")
 
     print(f"\nShortest path")
     all_routes = generate_variations_without_repeats(cities, length=len(cities))
@@ -126,6 +137,14 @@ def main():
     for city in route:
         print(city.name, end=' ')
     print(f"\nLength of path is: {length:.2f}")
+
+    print("\nCities which has most mean population")
+    all_pops = generate_variations_with_repeats(cities, length=len(cities))
+    pop_sum = sum([city.population for city in cities])
+    pop, best_sum = find_best_pops_fit(all_pops, target=pop_sum / 2)
+    for city in pop:
+        print(city.name, end=' ')
+    print(f"\nThese cities has sum population: {best_sum} most suited to target: {(pop_sum / 2):.2f}")
 
 
 if __name__ == '__main__':

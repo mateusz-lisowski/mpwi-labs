@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="Print result of the generations with repetitions">
+    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="Fix data read errors and display malfunctions">
+      <change afterPath="$PROJECT_DIR$/lab1/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,15 +26,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sindbad_the_sailor/PycharmProjects/redis-longscope-backend&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/sindbad_the_sailor/PycharmProjects/longscope-data-tool"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sindbad_the_sailor\PycharmProjects\mpwi-labs\lab1" />
@@ -150,7 +152,63 @@
       <option name="project" value="LOCAL" />
       <updated>1711366023125</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implement function calculating number of variations without repeats for given elements set and variations length">
+      <option name="closed" value="true" />
+      <created>1711366346594</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711366346594</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove same variations from output list">
+      <option name="closed" value="true" />
+      <created>1711366559524</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711366559524</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Implement class representing city object">
+      <option name="closed" value="true" />
+      <created>1711369045581</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711369045581</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add methods for data loading and calculating distances and routes length">
+      <option name="closed" value="true" />
+      <created>1711369588842</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1711369588842</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implement function for finding the shortest routes of the cities">
+      <option name="closed" value="true" />
+      <created>1711370031324</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711370031324</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Display the shortest path">
+      <option name="closed" value="true" />
+      <created>1711370658612</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711370658612</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix data read errors and display malfunctions">
+      <option name="closed" value="true" />
+      <created>1711371113278</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711371113278</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +221,13 @@
     <MESSAGE value="Implement main function of the program" />
     <MESSAGE value="Add function for ordering variations and remove duplicates" />
     <MESSAGE value="Print result of the generations with repetitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Print result of the generations with repetitions" />
+    <MESSAGE value="Implement function calculating number of variations without repeats for given elements set and variations length" />
+    <MESSAGE value="Remove same variations from output list" />
+    <MESSAGE value="Implement class representing city object" />
+    <MESSAGE value="Add methods for data loading and calculating distances and routes length" />
+    <MESSAGE value="Implement function for finding the shortest routes of the cities" />
+    <MESSAGE value="Display the shortest path" />
+    <MESSAGE value="Fix data read errors and display malfunctions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix data read errors and display malfunctions" />
   </component>
 </project>
