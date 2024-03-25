@@ -99,7 +99,7 @@ def order_variations(variations: list[list]) -> list[list]:
 
 def main():
 
-    cities = City.load_cities('data.csv')
+    cities = City.load_cities('lab1/data.csv')
 
     max_number = int(input("Enter maximal number: "))
     size = int(input("Enter size of the variation: "))
@@ -123,10 +123,9 @@ def main():
     print(f"\nShortest path")
     all_routes = generate_variations_without_repeats(cities, length=len(cities))
     route, length = find_best_path(all_routes)
-    print(f"Shortest path is")
     for city in route:
-        print(city)
-    print(f"Length of path is: {length}")
+        print(city.name, end=' ')
+    print(f"\nLength of path is: {length:.2f}")
 
 
 if __name__ == '__main__':
