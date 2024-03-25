@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="Add function for ordering variations and remove duplicates">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="Print result of the generations with repetitions">
       <change beforePath="$PROJECT_DIR$/lab1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,15 +24,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/sindbad_the_sailor/PycharmProjects/redis-longscope-backend"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sindbad_the_sailor/PycharmProjects/redis-longscope-backend&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sindbad_the_sailor\PycharmProjects\mpwi-labs\lab1" />
@@ -143,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711140143943</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Print result of the generations with repetitions">
+      <option name="closed" value="true" />
+      <created>1711366023125</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711366023125</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,6 +162,7 @@
     <MESSAGE value="Create function for calculating number of variations without repeats" />
     <MESSAGE value="Implement main function of the program" />
     <MESSAGE value="Add function for ordering variations and remove duplicates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function for ordering variations and remove duplicates" />
+    <MESSAGE value="Print result of the generations with repetitions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Print result of the generations with repetitions" />
   </component>
 </project>

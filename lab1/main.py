@@ -34,6 +34,10 @@ def calculate_variation_with_repeats(number_of_elements: int, number_of_chosen: 
     return int(math.factorial(number_of_elements) / math.factorial(number_of_elements - number_of_chosen))
 
 
+def calculate_variations_without_repeats(number_of_elements: int, number_of_chosen: int) -> int:
+    return pow(number_of_elements, number_of_chosen)
+
+
 def order_variations(variations: list[list]) -> list[list]:
     variations = variations[:]
     variations = list(map(lambda li: sorted(li), variations))
@@ -57,12 +61,12 @@ def main():
 
     print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
 
-    print("Variations with repeats")
+    print("\nVariations with repeats")
     variations_reps = generate_variations_with_repeats(list(range(1, max_number + 1)), size)
     for index, var in enumerate(variations_reps):
         print(f"{index + 1}: {var}")
 
-    print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
+    print(f"There should be {calculate_variations_without_repeats(max_number, size)} variations")
 
 
 if __name__ == '__main__':
