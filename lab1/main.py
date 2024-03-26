@@ -112,24 +112,24 @@ def main():
 
     cities = City.load_cities('lab1/data.csv')
 
-    # max_number = int(input("Enter maximal number: "))
-    # size = int(input("Enter size of the variation: "))
-    #
-    # print("\nVariations without repeats")
-    # variations_without_reps = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
-    # variations_without_reps_unique = order_variations(variations_without_reps)
-    # for index, var in enumerate(variations_without_reps_unique):
-    #     print(f"{index + 1}: {var}")
-    #
-    # print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
-    #
-    # print("\nVariations with repeats")
-    # variations_reps = generate_variations_with_repeats(list(range(1, max_number + 1)), size)
-    # variations_reps_unique = order_variations(variations_reps)
-    # for index, var in enumerate(variations_reps_unique):
-    #     print(f"{index + 1}: {var}")
-    #
-    # print(f"There should be {calculate_variations_without_repeats(max_number, size)} variations")
+    max_number = int(input("Enter maximal number: "))
+    size = int(input("Enter size of the variation: "))
+
+    print("\nVariations without repeats")
+    variations_without_reps = generate_variations_without_repeats(list(range(1, max_number + 1)), size)
+    variations_without_reps_unique = order_variations(variations_without_reps)
+    for index, var in enumerate(variations_without_reps_unique):
+        print(f"{index + 1}: {var}")
+
+    print(f"There should be {calculate_variation_with_repeats(max_number, size)} variations")
+
+    print("\nVariations with repeats")
+    variations_reps = generate_variations_with_repeats(list(range(1, max_number + 1)), size)
+    variations_reps_unique = order_variations(variations_reps)
+    for index, var in enumerate(variations_reps_unique):
+        print(f"{index + 1}: {var}")
+
+    print(f"There should be {calculate_variations_without_repeats(max_number, size)} variations")
 
     print(f"\nShortest path")
     all_routes = generate_variations_without_repeats(cities, length=len(cities))

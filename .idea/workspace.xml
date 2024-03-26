@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="Fix data read errors and display malfunctions">
-      <change afterPath="$PROJECT_DIR$/lab1/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="1b1c93ed-ef23-4377-a6e9-edbb49d8e902" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711371113278</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add lab data">
+      <option name="closed" value="true" />
+      <created>1711373992712</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711373992712</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add fully working solution for whole lab">
+      <option name="closed" value="true" />
+      <created>1711374123702</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1711374123702</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +240,8 @@
     <MESSAGE value="Implement function for finding the shortest routes of the cities" />
     <MESSAGE value="Display the shortest path" />
     <MESSAGE value="Fix data read errors and display malfunctions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix data read errors and display malfunctions" />
+    <MESSAGE value="Add lab data" />
+    <MESSAGE value="Add fully working solution for whole lab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add fully working solution for whole lab" />
   </component>
 </project>
